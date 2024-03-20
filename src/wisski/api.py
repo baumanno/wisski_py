@@ -929,6 +929,10 @@ class FieldTypeFormatter:
                 "title": value,
                 "options": []
             }
+        elif field_type == "list_string":
+            formatted_value = {
+                "value": value,
+            }
         return formatted_value
 
     @staticmethod
